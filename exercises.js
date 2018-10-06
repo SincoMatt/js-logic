@@ -73,7 +73,15 @@ console.log("Login status:", login("test1"));
  * Console.log your result.
 */
 
+function isGreaterThan(first, second){
+  if(first > second){
+    return "true";
 
+  }else{
+    return "false";
+  }
+}
+console.log("Result:", isGreaterThan(5, 7));
 
 /*
  * #4
