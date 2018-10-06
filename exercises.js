@@ -207,7 +207,15 @@ console.log("Outcome:", spareChange("250"));
  * Console.log your result.
 */ 
 
-
+function dirty30(one, two, three){
+  var sum = one + two + three;
+  if(sum > 30){
+    return "True";
+  }else{
+    return "False";
+  }
+}
+console.log("Answer:", dirty30('10', '7', '19'));
 
 /*
  * #10
