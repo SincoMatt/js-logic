@@ -229,6 +229,14 @@ console.log("Answer:", dirty30('10', '7', '19'));
  * Console.log your result.
 */ 
 
+function evenStevens(num){
+  if(num%2){
+    return "True";
+  }else{
+    return "False";
+  }
+}
+console.log("Result:", evenStevens("79"));
 
 
 /*
