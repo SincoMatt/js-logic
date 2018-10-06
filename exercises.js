@@ -162,6 +162,14 @@ console.log("Answer:", isEqual('Fun', 'fun'));
  * Console.log your result.
 */
 
+function notEqual(first, second){
+  if(first !== second){
+    return "Opposites do attract.";
+  }else{
+    return "Cause it's like you're my mirror";
+  }
+}
+console.log("Result:", notEqual("Fire", "Water"));
 
 /*
  * #8
@@ -175,7 +183,14 @@ console.log("Answer:", isEqual('Fun', 'fun'));
  * Console.log your result.
 */ 
 
-
+function spareChange(money){
+  if(money > "100"){
+    return "True";
+  }else{
+    return "False";
+  }
+}
+console.log("Outcome:", money("250"));
 
 /*
  * #9
