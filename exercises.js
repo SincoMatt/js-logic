@@ -183,6 +183,7 @@ console.log("Result:", notEqual("Fire", "Water"));
  * Console.log your result.
 */ 
 
+
 function spareChange(money){
   if(money > "100"){
     return "True";
@@ -190,7 +191,7 @@ function spareChange(money){
     return "False";
   }
 }
-console.log("Outcome:", money("250"));
+console.log("Outcome:", spareChange("250"));
 
 /*
  * #9
