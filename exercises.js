@@ -231,7 +231,6 @@ console.log("Answer:", dirty30('10', '7', '19'));
 
 
 
-
 /*
  * #11
  * Function - daClub
@@ -245,7 +244,14 @@ console.log("Answer:", dirty30('10', '7', '19'));
  * Console.log your result.
 */ 
 
-
+function daClub(cover, age){
+  if(age >= '21', cover >= '21'){
+    return "Welcome to the Legends Lounge.";
+  }else{
+    return "Chuck E Cheese is across the street.";
+  }
+}
+console.log("Outcome:", daClub("21", "23"));
 /*
  * #12
  * Function - graduation
