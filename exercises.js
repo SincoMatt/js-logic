@@ -95,8 +95,16 @@ console.log("Result:", isGreaterThan(5, 7));
  * Console.log your result.
 */
 
+function mustBeTrue(boo){
+  if(boo === "true"){
+    return "correct";
 
+  }else{
+    return "wrong";
 
+  }
+}
+console.log("Outcome:", mustBeTrue("true"));
 /*
  * #5
  * Function - bigBird
