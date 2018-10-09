@@ -304,6 +304,7 @@ function moneyTrain(speed){
   }
 }
 console.log("Answer:", moneyTrain(350));
+
 /*
  * #14
  * Function - buyDoughnut
@@ -317,6 +318,18 @@ console.log("Answer:", moneyTrain(350));
  * Invoke your function again.
  * Console.log budget and doughnutBought again.
 */ 
+var budget = 29;
+var doughnutPrice = 5;
+var doughnutBought = 0;
+function buyDoughnut(){
+  if(budget >= doughnutPrice){
+    budget -= doughnutPrice;
+    doughnutBought++;
+  }
+}
+buyDoughnut();
+console.log("Budget:", budget);
+console.log("Bought:", doughnutBought);
 
 /*Final Boss*/
 /*Create a function name dailySpecials which takes in a parameter: `special`.
