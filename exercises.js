@@ -253,13 +253,13 @@ console.log("Result:", evenStevens("79"));
 */ 
 
 function daClub(cover, age){
-  if(age >= '21', cover >= '21'){
+  if(age >= 21 && cover >= 21){
     return "Welcome to the Legends Lounge.";
   }else{
     return "Chuck E Cheese is across the street.";
   }
 }
-console.log("Outcome:", daClub("21", "23"));
+console.log("Outcome:", daClub(21, 23));
 /*
  * #12
  * Function - graduation
@@ -273,7 +273,14 @@ console.log("Outcome:", daClub("21", "23"));
  * Console.log your result.
 */ 
 
-
+function graduation(credits, thesis){
+  if(credits >= 120 || thesis === true){
+    return "Congradulations on a job well done.";
+  }else{
+    return "See you in summer school.";
+  }
+}
+console.log("Result:", graduation(110, true));
 
 /*
  * #13
@@ -287,7 +294,16 @@ console.log("Outcome:", daClub("21", "23"));
  * Console.log your result.
 */ 
 
-
+function moneyTrain(speed){
+  if(speed < 50){
+    return "You are riding Honolulu's Rail";
+  }else if(speed < 100){
+    return "You are riding an Amtrak";
+  }else{
+    return "Now you ballin' in the Shinkansen"
+  }
+}
+console.log("Answer:", moneyTrain(350));
 /*
  * #14
  * Function - buyDoughnut
