@@ -388,7 +388,7 @@ for (var i = 0; i<toyotaModels.length; i++){
  * "Player: 5"
 */
 
-for(var i = 1; i<6; i++){
+for(var i = 1; i<=5; i++){
   console.log("Player:" + i);
 }
 
@@ -398,6 +398,10 @@ for(var i = 1; i<6; i++){
 */
   var myFavFoods = ["lemon bar", "carrot cake", "nachos", "bacon cheeseburger", "ramen", "sweet potato fries", "chimichanga"];
 
+for(var i = 0; i<myFavFoods.length; i++){
+  console.log(myFavFoods[i]);
+
+}
 
 /*
  * #17
@@ -414,7 +418,18 @@ for(var i = 1; i<6; i++){
  * Console.log your result.
 */
 
+var numArray = [2, 3, 5, 7, 9];
 
+function sumItUp(arr){
+var total = 0;
+for(var i = 0; i<arr.length; i++){
+  //console.log(arr[i]); = to list the array
+  total += arr[i];
+}
+return total;
+
+}
+console.log("Sum of array:", sumItUp(numArray));
 
 /*
  * #18
@@ -429,6 +444,24 @@ for(var i = 1; i<6; i++){
 */ 
 
 var players = ["Yao Ming", "BrookLin", " Jesus Shuttlesworth", "Manute Bol", "Sidney Deane", "World B Free"];
+var eastArray = [];
+var westArray = [];
+
+function allStars(ballers){
+for(var i = 0; i<ballers.length; i++){
+  if(i%2 === 0){
+    console.log(ballers[i]);
+    eastArray.push(ballers[i]);
+
+    }else{
+    westArray.push(ballers[i]);
+    }
+  }
+}
+allStars(players);
+console.log("East:", eastArray);
+console.log("West:", westArray);
+
 /*
  * #19
  * Function - subways
