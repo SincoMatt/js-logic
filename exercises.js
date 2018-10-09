@@ -323,13 +323,17 @@ var doughnutPrice = 5;
 var doughnutBought = 0;
 function buyDoughnut(){
   if(budget >= doughnutPrice){
-    budget -= doughnutPrice;
-    doughnutBought++;
+    (budget -= doughnutPrice);
+    (doughnutBought++);
+    return "Enjoy your Doughnut";
+  }else{
+    return "Get out of here";
   }
 }
 buyDoughnut();
 console.log("Budget:", budget);
 console.log("Bought:", doughnutBought);
+console.log(buyDoughnut());
 
 /*Final Boss*/
 /*Create a function name dailySpecials which takes in a parameter: `special`.
@@ -355,7 +359,7 @@ function dailySpecials(special){
   }
   return menu;
 }
-console.log("Special:", dailySpecials("Tuesday"));
+console.log("Todays Special:", dailySpecials("Tuesday"));
 
 /*
 For loops - A for loop checks a condition a specific number of times and allows us to execute a code block and evaluate a condition to determine if our loop should run again.
@@ -384,6 +388,9 @@ for (var i = 0; i<toyotaModels.length; i++){
  * "Player: 5"
 */
 
+for(var i = 1; i<6; i++){
+  console.log("Player:" + i);
+}
 
 /* 
  * #16
